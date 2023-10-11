@@ -23,10 +23,11 @@ public class task1 {
     }
 
     public static String scanner() {
-        Scanner scanner = new Scanner(System.in);
-        String scan = scanner.nextLine();
-        // scanner.close();
-        return scan;
+        try (Scanner scanner = new Scanner(System.in)) {
+            String scan = scanner.nextLine();
+            // scanner.close();
+            return scan;
+        }
     }
 
     public static void find(Map<String, List<String>> phonBook) {

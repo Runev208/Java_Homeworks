@@ -10,17 +10,19 @@ import java.util.Scanner;
 public class task_3 {
     // метод получения числа
     static int scanNumber() {
-        Scanner scan = new Scanner(System.in);
-        int number = scan.nextInt();
-        return number;
-        // scan.close(); Почему не получается закрыть Scanner???
+        try (Scanner scan = new Scanner(System.in)) {
+            int number = scan.nextInt();
+            return number;
+            // scan.close(); Почему не получается закрыть Scanner???
+        }
     }
 
     // метод получения числа операции
     static String scanOperations() {
-        Scanner scan = new Scanner(System.in);
-        String operations = scan.nextLine();
-        return operations;
+        try (Scanner scan = new Scanner(System.in)) {
+            String operations = scan.nextLine();
+            return operations;
+        }
 
     }
 
