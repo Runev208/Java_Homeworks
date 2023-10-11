@@ -8,8 +8,6 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class HW6 {
-    
-}
 public static void main(String[] args) {
     Notebook notebook1 = new Notebook("Acer", "4", "1000", "Windows", "grey");
     Notebook notebook2 = new Notebook("Acer", "4", "1000", "Linux", "black");
@@ -26,9 +24,10 @@ public static void main(String[] args) {
  }
 
  public static String scanner() {
-    Scanner scanner = new Scanner(System.in);
-    String scan = scanner.nextLine();
-    return scan;
+    try (Scanner scanner = new Scanner(System.in)) {
+        String scan = scanner.nextLine();
+        return scan;
+    }
  }
 
  public static Map<String, String> selectCriteria() {
