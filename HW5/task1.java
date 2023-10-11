@@ -12,10 +12,10 @@ import java.util.Scanner;
 public class task1 {
     public static void main(String[] args) {
         Map<String, List<String>> phonBook = new HashMap<>();
-        phonBook.put("Lena", List.of("8 926 333 33 33", "8 926 222 22 99"));
-        phonBook.put("Ira", List.of("8 926 333 33 55", "8 926 222 22 00"));
+        phonBook.put("Lena", List.of("8 923 333 33 33", "8 926 222 22 99"));
+        phonBook.put("Ira", List.of("8 923 333 33 55", "8 926 222 22 00"));
         phonBook.put("Igor", List.of("8 926 333 33 66", "8 926 222 22 44"));
-        phonBook.put("Petr", List.of("8 926 333 33 77", "8 926 222 22 11"));
+        phonBook.put("Petr", List.of("8 935 333 33 77", "8 926 222 22 11"));
         phonBook.put("Dima", List.of("8 926 333 33 88", "8 926 222 22 22"));
 
         menu(phonBook);
