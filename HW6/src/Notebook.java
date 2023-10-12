@@ -22,7 +22,7 @@ public class Notebook {
 
     public static List<notebook> initListNotebooks() {
         List<notebook> notebooks = new ArrayList<>();
-        notebooks.add(new notebook("Dell", 8, 256, "Windows", "Black"));
+        notebooks.add(new notebook("Acer", 8, 256, "Windows", "Black"));
         notebooks.add(new notebook("HP", 8, 128, "MacOS", "Silver"));
         notebooks.add(new notebook("Lenovo", 16, 512, "Windows", "Black"));
         notebooks.add(new notebook("Asus", 16, 256, "Windows", "Silver"));
